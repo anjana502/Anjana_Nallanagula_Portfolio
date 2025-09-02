@@ -30,10 +30,9 @@ def sendemail():
             server.starttls()
             server.login(your_email, your_password)
 
-            # Compose the email
             msg = EmailMessage()
             msg.set_content(f"Name: {name}\nEmail: {email}\nSubject: {subject}\nMessage: {message}")
-            msg["To"] = your_email  # Send the email to yourself
+            msg["To"] = your_email
             msg["From"] = email
             msg["Subject"] = subject
             msg["Reply-To"] = email

@@ -14,3 +14,18 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var typed = new Typed("#typed", {
+    strings: [
+        "Computer Science Graduate Student",
+        "Software Engineer",
+        "AWS Certified Developer-Associate",
+        "Machine Learning Practitioner"
+    ],
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+  });
+});
